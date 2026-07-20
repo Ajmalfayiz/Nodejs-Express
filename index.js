@@ -2,6 +2,8 @@ const express = require('express')
 
 const app = express()
 
+const PORT = 4000;
+
 let users = [
     {
         "id": 1,
@@ -19,7 +21,7 @@ let users = [
         "Age": 26
     }
 ]
-const PORT = 4000;
+
 
 app.get('/', (req, res) => {
     res.send("Home Page")
@@ -34,6 +36,10 @@ app.get('/contact', (req, res) => {
 
 app.get('/users', (req, res) => {
     res.json(users)
+})
+
+app.get('/users/:id', (req, res) => {
+    res.json()
 })
 
 app.listen(PORT, () => {
