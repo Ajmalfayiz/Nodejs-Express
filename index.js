@@ -3,7 +3,7 @@ const { message } = require('statuses');
 
 const app = express()
 
-const PORT = 4000;
+const PORT = 5000;
 
 //Middle ware
 app.use(express.json())
@@ -74,6 +74,9 @@ app.post('/users', (req, res) => {
         message: 'User Created Successfully'
     })
 })
+
+
+
 app.listen(PORT, () => {
-    console.log(`Server Running  on ${PORT}`)
-})
+    console.log(`Server Running on ${PORT}`)
+}) 
