@@ -28,7 +28,7 @@ app.get('/users', (req, res) => {
     res.json(users)
 })
 
-//Get user by id
+//Get user by id (GET Request)
 
 app.get('/users/:id', (req, res) => {
     const user_id = Number(req.params.id)
