@@ -48,7 +48,7 @@ app.get('/users/:id', (req, res) => {
     res.json(user)
 })
 
-//Create User
+//Create User(POST Request)
 
 app.post('/users', (req, res) => {
 
